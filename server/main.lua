@@ -1,0 +1,5 @@
+AddEventHandler('playerDropped', function(reason)
+    local _player = GetPlayerFromServerId(source)
+    local ped = GetPlayerPed(_player)
+    RemovePedElegantly(ped)
+end)
