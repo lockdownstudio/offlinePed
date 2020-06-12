@@ -1,7 +1,5 @@
-AddEventHandler('playerDropped', function(reason)
-    if source then
+AddEventHandler('playerDropped', function(source)
         local _player = GetPlayerFromServerId(source)
         local ped = GetPlayerPed(_player)
         RemovePedElegantly(ped)
-    end
 end)
